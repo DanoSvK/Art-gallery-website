@@ -14,9 +14,17 @@ body {
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header content */
+
 header {
     position: relative;
     height: 100vh;
+    margin-bottom: 11.25rem;
 }
 
 .black-background {
@@ -49,13 +57,17 @@ header {
     top: 15%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px 0 100px;
+    padding: 0 10.25rem 0 10.25rem;
+}
+
+.header-text p {
+    padding-top: 45px;
 }
 
 .header-text h1 {
     font-style: normal;
     font-weight: 900;
-    font-size: 97.4px;
+    font-size: 3.3125rem;
     line-height: 88px;
 }
 
@@ -97,4 +109,69 @@ a:active {
 
 a:active::after {
     background-color: black;
+}
+
+/* Main content */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    padding: 0 10.25rem 0 10.25rem;
+    height: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1.875rem;
+}
+
+.text {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    line-height: normal;
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+}
+
+.wide {
+    display: grid;
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 2;
+    background: url(/assets/desktop/image-grid-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wide-tall {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 4;
+    background: url(/assets/desktop/image-grid-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.small {
+    display: grid;
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+    background: url(/assets/desktop/image-grid-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.small-black {
+    display: grid;
+    grid-column: 4 / span 2;
+    grid-row: 5 / span 2;
+    background-color: black;
+    padding: 2rem 1.5rem;
+    color: white;
+    line-height: normal;
+}
+
+.text p {
+    max-width: 20.625rem;
 }
