@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+}
+
+.black-background {
+    display: inline-block;
+    width: 31.24999998%;
+    height: 100vh;
+    background-color: black;
+}
+
+.hero {
+    display: inline-block;
+    width: 37.499999976%;
+    height: 100vh;
+    background: url(/assets/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.white-background {
+    display: inline-block;
+    width: 31.24999998%;
+    height: 100vh;
+}
+
+.header-text {
+    position: absolute;
+    width: 100%;
+    color: white;
+    display: flex;
+    top: 15%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+
+.header-text h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 97.4px;
+    line-height: 88px;
+}
+
+span {
+    color: black;
+}
+
+.header-text p {
+    color: black;
+    width: 25rem;
+}
+
+a {
+    position: relative;
+    display: block;
+    width: 12.75rem;
+    height: 4.5rem;
+    top: 100px;
+    background-color: black;
+    text-align: center;
+    line-height: 4.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+a::after {
+    position: absolute;
+    left: 204px;
+    content: url(/assets/icon-arrow-right.svg);
+    width: 3.5rem;
+    height: 4.5rem;
+    background-color: #D5966C;
+    padding-top: 5px;
+}
+
+a:active {
+    background-color: #D5966C;
+}
+
+a:active::after {
+    background-color: black;
+}
