@@ -14,8 +14,6 @@ body {
     box-sizing: inherit;
 }
 
-
-
 /* Header content */
 
 header {
@@ -49,7 +47,7 @@ header {
 .header-text {
     position: absolute;
     width: 100%;
-    color: white;
+    color: grey;
     display: flex;
     top: 15%;
     justify-content: space-between;
@@ -66,10 +64,6 @@ header {
     font-weight: 900;
     font-size: 3.3125rem;
     line-height: 88px;
-}
-
-span {
-    color: black;
 }
 
 .header-text p {
@@ -108,7 +102,9 @@ span {
     background-color: black;
 }
 
-
+.hero-button:hover::after {
+    background-color: black;
+}
 
 /* Main content */
 .container {
@@ -202,22 +198,52 @@ li {
     list-style: none;
     padding-left: 1.25rem;
 }
-/* .flex-1 {
-    display: flex;
-    flex-grow: 1
-}
 
-.flex-2 {
-    display: flex;
-    flex-grow: 2;
-    padding: 0 17.5rem 0 8.75rem;
-}
+/* Media queries */
 
-.flex-3 {
-    display: flex;
-    flex-grow: 1;
-} */
+@media (max-width:1160px) {
+    .black-background {
+        display: none;
+    }
 
-.footer-button {
+    .hero {
+        width: 50%;
+    }
 
+    .white-background {
+        width: 50%;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0 10.25rem 0 0;
+        color: black;
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .header-text p,
+    .header-text h1 {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .header-text h1 {
+        line-height: 65px;
+        padding-right: 17px;
+    }
+    
+    .header-text p {
+        line-height: 28px;
+        height: 112px;
+        padding-top: 30px;
+    }
+
+    .hero-button {
+        position: relative;
+        top: 40px;
+    }
 }
