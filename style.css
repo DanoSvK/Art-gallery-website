@@ -14,6 +14,11 @@ body {
     box-sizing: inherit;
 }
 
+.grid img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header content */
 
 header {
@@ -245,5 +250,13 @@ li {
     .hero-button {
         position: relative;
         top: 40px;
+    }
+
+    .grid {
+        padding: 0 40px 0 40px;
+    }
+
+    .footer-text {
+        padding: 0 40px 0 40px;
     }
 }
