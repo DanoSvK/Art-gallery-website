@@ -23,6 +23,19 @@ h1 {
     height: auto;
 }
 
+/* picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+}
+
+  picture img {
+    object-fit: cover; 
+    height: auto;
+    max-width: 100%;
+} */
+
 /* Header content */
 ˇ
 .black-background {
@@ -170,4 +183,69 @@ li {
 
 ul li:first-child {
     padding-left: 0;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+
+    .hero {
+        position: relative;
+        display: inline-block;
+        max-width: 60%;
+        height: 700px;
+    }
+
+    .white-background {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .header-text {
+        position: absolute;
+        width: 22rem;
+        left: 86%;
+        top: 15%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: .6875rem;
+    }
+
+    .text {
+        display: grid;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+
+    .wide {
+        display: grid;
+        grid-column: 3 / span 3;
+        grid-row: 1 / span 2;
+    }
+    
+    .wide-tall {
+        display: grid;
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 4;
+        margin-bottom: 0;
+    }
+    
+    .small {
+        display: grid;
+        grid-column: 4 / span 2;
+        grid-row: 3 / span 2;
+    }
+    
+    .small-black {
+        display: grid;
+        grid-column: 4 / span 2;
+        grid-row: 5 / span 2;
+        background-color: black;
+        padding: 3rem 1.5rem;
+        color: #ffffff;
+        line-height: normal;
+    }
 }
