@@ -169,11 +169,18 @@ ul li:first-child {
         height: 700px;
     }
 
-    .header-text {
+    .header-text h1 {
         position: absolute;
         width: 22rem;
         left: 86%;
         top: 15%;
+    }
+
+    .header-text p {
+        position: absolute;
+        width: 22rem;
+        left: 86%;
+        top: 37%;
     }
 
 /*Media queries (768px) Home main */
@@ -276,6 +283,16 @@ header {
         height: 700;
         top: 0;
         left: 450px;
+    }
+
+    .header-text h1 {
+        left: -150px;
+        mix-blend-mode: difference;
+        color: #fff;
+    }
+
+    .header-text p {
+        top: 15%
     }
 
 /* Media queries (1200px) Home main */

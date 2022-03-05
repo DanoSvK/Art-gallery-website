@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 # [Frontend Mentor](frontendmentor.io/) - Art gallery website - WIP 
 ![](./assets/screenshot.jpg)
 
@@ -18,3 +21,4 @@ Goal of this challenge:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
