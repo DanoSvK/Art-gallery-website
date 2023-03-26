@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;900&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
     <title>Art gallery website</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="location-header">
-            <picture>
-                <source media="(min-width: 1340px)"
-                        srcset="./assets/desktop/image-map.png,
-                                ./assets/desktop/image-map@2x.png">
-                <source media="(min-width: 768px)"
-                        srcset="./assets/tablet/image-map.png,
-                                ./assets/tablet/image-map@2x.png">
-                <img src="./assets/mobile/image-map.png" srcset="./assets/mobile/image-map@2x.png" alt="location on a map">             
-            </picture>
-            <a href="index.html">BACK TO HOME</a>
-        </div>
+      <div class="location-header" id="map">
+        <a class="back" href="index.html">BACK TO HOME</a>
+      </div>
     </header>
     <main>
-        <div class="location-black-background">
-            <div class="main-title">
-                <h1>OUR LOCATION</h1>
-            </div>
-            <div class="location-text">
-                <h2>99 KING STREET</h2>
-                <li>Newport</li>
-                <li>RI 02840</li>
-                <li>United States of America</li>
-                <p>Our newly opened gallery is located near the Edward King House on 99 King Street, the Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm.</p>
-            </div>
+      <div class="location-black-background">
+        <div class="main-title">
+          <h1>OUR LOCATION</h1>
         </div>
+        <div class="location-text">
+          <h2>99 KING STREET</h2>
+          <li>Newport</li>
+          <li>RI 02840</li>
+          <li>United States of America</li>
+          <p>
+            Our newly opened gallery is located near the Edward King House on 99
+            King Street, the Modern Art Gallery is free to all visitors and open
+            seven days a week from 8am to 9pm.
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="location-footer">
-            <h3>MODERN<br>ART GALLERY</h3>
-            <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
-            <ul class="social-media">
-                <li><a class="footer-button-1" href="#"><img src="./assets/icon-facebook.svg" alt="facebook"></a></li>
-                <li><a class="footer-button" href="#"><img src="./assets/icon-instagram.svg" alt="instagram"></a></li>
-                <li><a class="footer-button" href="#"><img src="./assets/icon-twitter.svg" alt="twitter"></a></li>
-                </ul>
-        </div>
+      <div class="location-footer">
+        <h3>MODERN<br />ART GALLERY</h3>
+        <p>
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <ul class="social-media">
+          <li>
+            <a class="footer-button-1" href="#"
+              ><img src="./assets/icon-facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a class="footer-button" href="#"
+              ><img src="./assets/icon-instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a class="footer-button" href="#"
+              ><img src="./assets/icon-twitter.svg" alt="twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
